@@ -1,0 +1,7 @@
+type Query { 
+    getAllUsers(params: QueryParams): User!
+}
+
+type mutation {
+    createUser(params: User): User!
+}

@@ -1,0 +1,41 @@
+#Types
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    contactNo: String!
+    # role: UserRole!
+    password: String!
+    # createdAt: Date!
+    # updatedAt: Date!
+}
+
+type Users {
+    result:[User]!
+}
+
+#Inputs
+input RegisterUserInput {
+    id:ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    contactNo: String!
+    # role: UserRole!
+    password: String!
+}
+
+input UpdateUserInput {
+    firstName: String!
+    lastName: String!
+    email: String!
+    contactNo: String!
+    # role: UserRole!
+    password: String!
+}
+
+input LoginUserInput {
+    email: String!
+    password: String!
+}
